@@ -1,0 +1,97 @@
+{
+  "RootObject": {
+    "__guid": "97ea9048-ec3a-45e8-8c48-f28a8e22d5d7",
+    "Flags": 0,
+    "Name": "deck",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "NetworkOrphaned": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "Deck",
+        "__guid": "bff3718b-ea17-442d-8411-756dfc7336c6",
+        "_deck": [],
+        "CardPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/card.prefab"
+        },
+        "cardRank": "",
+        "cardSuite": "",
+        "excludeSuite": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "SequenceAdd": false,
+        "Size": 0,
+        "StartsFrom": 0
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "59a51f63-a3b4-4e3f-9bff-1b80e1452840",
+        "Flags": 0,
+        "Name": "Card (1)",
+        "Position": "10,10,0",
+        "Scale": "1.12,0.8,1",
+        "Enabled": true,
+        "__Prefab": "prefabs/card.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "51b605c4-f85e-41b1-87f5-a369e51d616b",
+        "Flags": 0,
+        "Name": "Card (2)",
+        "Position": "0,0,1.371495",
+        "Scale": "1.12,0.8,1",
+        "Enabled": true,
+        "__Prefab": "prefabs/card.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "1832a727-790a-4077-939c-891f4050bf91",
+        "Flags": 0,
+        "Name": "Card (3)",
+        "Position": "-10,-10,4.698364",
+        "Scale": "1.12,0.8,1",
+        "Enabled": true,
+        "__Prefab": "prefabs/card.prefab",
+        "__PrefabVariables": {}
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

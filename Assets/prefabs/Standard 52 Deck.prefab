@@ -1,0 +1,306 @@
+{
+  "RootObject": {
+    "__guid": "193aa4d1-6727-42ff-8a83-538385f8b98f",
+    "Flags": 0,
+    "Name": "standard 52 deck",
+    "Enabled": true,
+    "NetworkMode": 1,
+    "NetworkOrphaned": 1,
+    "OwnerTransfer": 0,
+    "Components": [
+      {
+        "__type": "Deck",
+        "__guid": "835273f0-8721-48e9-8347-1578df00bd63",
+        "_deck": [
+          {
+            "Rank": "Ace",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "Ace",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "Ace",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "Ace",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "2",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "3",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "4",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "5",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "6",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "7",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "8",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "9",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "10",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "2",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "3",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "4",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "5",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "6",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "7",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "8",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "9",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "10",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "2",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "3",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "4",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "5",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "6",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "7",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "8",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "9",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "10",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "2",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "3",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "4",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "5",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "6",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "7",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "8",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "9",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "10",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "King",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "King",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "King",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "King",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Clubs"
+          }
+        ],
+        "CardPrefab": {
+          "_type": "gameobject",
+          "prefab": "prefabs/card.prefab"
+        },
+        "cardRank": "2",
+        "cardSuite": "",
+        "excludeSuite": true,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "SequenceAdd": false,
+        "Size": 52,
+        "StartsFrom": 2
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "e5843b00-fe0a-4a9a-ae23-31e95f781a7d",
+        "Flags": 0,
+        "Name": "Card (1)",
+        "Position": "10,10,0",
+        "Scale": "1.12,0.8,1",
+        "Enabled": true,
+        "__Prefab": "prefabs/card.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "442c0988-7896-4974-b0d0-950597242fcf",
+        "Flags": 0,
+        "Name": "Card (2)",
+        "Position": "0,0,1.371495",
+        "Scale": "1.12,0.8,1",
+        "Enabled": true,
+        "__Prefab": "prefabs/card.prefab",
+        "__PrefabVariables": {}
+      },
+      {
+        "__guid": "a2db1761-3e58-47dd-ba69-59df56eee02e",
+        "Flags": 0,
+        "Name": "Card (3)",
+        "Position": "-10,-10,4.698364",
+        "Scale": "1.12,0.8,1",
+        "Enabled": true,
+        "__Prefab": "prefabs/card.prefab",
+        "__PrefabVariables": {}
+      }
+    ],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "RootObject": {
+    "__guid": "54139a49-3419-40ea-ab07-8b5609f7e7d7",
+    "Flags": 0,
+    "Name": "Player",
+    "Enabled": true,
+    "Components": [
+      {
+        "__type": "CardPlayerController",
+        "__guid": "a373fce8-bbd6-4ff5-8f00-6f1e56cb6ea5",
+        "held": null,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null
+      }
+    ]
+  },
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
