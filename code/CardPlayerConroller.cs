@@ -22,7 +22,7 @@ public sealed class CardPlayerController : Component
 		// When first pressing down the key
 		if ( Input.Pressed( "grab" ) )
 		{
-			//Log.Info( "Pressed!" );
+			Log.Info( "Pressed!" );
 
 			//Vector3 pos = Scene.Camera.ScreenToWorld( Mouse.Position );
 			SceneTraceResult ray = Scene.Trace.Ray( Scene.Camera.ScreenPixelToRay( Mouse.Position ), 200 ).Run();
@@ -38,13 +38,15 @@ public sealed class CardPlayerController : Component
 				// If it is a card, grab it
 				if (go.GetComponent<Card>() is Card c )
 				{
-					//Log.Info( "Card Grabbed" );
+					Log.Info( "Card Grabbed" );
+					go.Network.TakeOwnership();
 					held = c;
 				}
 				// Why in parent? Just in case the collider is on a subpart of the object
 				else if (go.GetComponentInParent<Deck>() is Deck d)
 				{
-					//Log.Info( "Deck Clicked" );
+					Log.Info( "Deck Clicked" );
+					go.Parent.Network.TakeOwnership();
 					held = d.DrawTop();
 				}
 
@@ -61,6 +63,7 @@ public sealed class CardPlayerController : Component
 			//Log.Info( "Held" );
 
 			// Update the held cards position, and apply the offset for where it is being held from
+			// If we do not own the held, this will not happen
 			if ( held != null ) held.WorldPosition = holdOffset + Scene.Camera.ScreenToWorld( Mouse.Position ).WithZ( held.LocalPosition.z );
 		}
 		else if (Input.Released( "grab" ))

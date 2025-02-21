@@ -30,7 +30,7 @@
           "AfterUILayer": false
         },
         "RenderType": "On",
-        "Tint": "0.41395,0.08857,0.08857,1"
+        "Tint": "0.57674,0.05097,0.05097,1"
       },
       {
         "__type": "Sandbox.PlaneCollider",

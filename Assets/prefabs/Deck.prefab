@@ -11,13 +11,13 @@
       {
         "__type": "Deck",
         "__guid": "bff3718b-ea17-442d-8411-756dfc7336c6",
-        "_deck": [],
+        "_startingDeck": [],
         "CardPrefab": {
           "_type": "gameobject",
           "prefab": "prefabs/card.prefab"
         },
-        "cardRank": "",
-        "cardSuite": "",
+        "cardRank": "0",
+        "cardSuite": "0",
         "excludeSuite": false,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -28,6 +28,50 @@
         "SequenceAdd": false,
         "Size": 0,
         "StartsFrom": 0
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "ec6a336f-71ea-48ff-b669-16cf7a6fc4a4",
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/dev/box.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "8b01009e-dfea-41d5-b7a6-b9ba2dbd4ee0",
+        "Center": "0,0,0",
+        "Friction": null,
+        "IsTrigger": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "50,50,50",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
       }
     ],
     "Children": [

@@ -1,104 +1,82 @@
 {
   "RootObject": {
-    "__guid": "193aa4d1-6727-42ff-8a83-538385f8b98f",
+    "__guid": "3e8ebda9-4812-4b8a-be73-cac54db89874",
     "Flags": 0,
     "Name": "standard 52 deck",
+    "Position": "2.969915,190.3206,0.6983638",
+    "Rotation": "0,0,0.7071068,0.7071068",
     "Enabled": true,
     "NetworkMode": 1,
-    "NetworkOrphaned": 1,
+    "NetworkOrphaned": 2,
     "OwnerTransfer": 0,
     "Components": [
       {
         "__type": "Deck",
-        "__guid": "835273f0-8721-48e9-8347-1578df00bd63",
-        "_deck": [
+        "__guid": "983fbe9c-d418-4785-95e5-70ca698ca847",
+        "_startingDeck": [
+          {
+            "Rank": "Ace",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "Ace",
+            "Suite": "Hearts"
+          },
           {
             "Rank": "Ace",
             "Suite": "Spades"
           },
           {
             "Rank": "Ace",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "Ace",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "Ace",
             "Suite": "Diamonds"
           },
           {
-            "Rank": "2",
+            "Rank": "Jack",
             "Suite": "Clubs"
           },
           {
-            "Rank": "3",
+            "Rank": "Jack",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Spades"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Diamonds"
+          },
+          {
+            "Rank": "Queen",
             "Suite": "Clubs"
           },
           {
-            "Rank": "4",
+            "Rank": "King",
             "Suite": "Clubs"
           },
           {
-            "Rank": "5",
-            "Suite": "Clubs"
+            "Rank": "King",
+            "Suite": "Diamonds"
           },
           {
-            "Rank": "6",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "7",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "8",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "9",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "10",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "2",
+            "Rank": "King",
             "Suite": "Hearts"
           },
           {
-            "Rank": "3",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "4",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "5",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "6",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "7",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "8",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "9",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "10",
-            "Suite": "Hearts"
+            "Rank": "King",
+            "Suite": "Spades"
           },
           {
             "Rank": "2",
@@ -138,6 +116,42 @@
           },
           {
             "Rank": "2",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "3",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "4",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "5",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "6",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "7",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "8",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "9",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "10",
+            "Suite": "Hearts"
+          },
+          {
+            "Rank": "2",
             "Suite": "Diamonds"
           },
           {
@@ -173,51 +187,39 @@
             "Suite": "Diamonds"
           },
           {
-            "Rank": "Jack",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Spades"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Spades"
-          },
-          {
-            "Rank": "Jack",
-            "Suite": "Spades"
-          },
-          {
-            "Rank": "Jack",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "King",
+            "Rank": "2",
             "Suite": "Clubs"
           },
           {
-            "Rank": "Queen",
+            "Rank": "3",
             "Suite": "Clubs"
           },
           {
-            "Rank": "Jack",
+            "Rank": "4",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "5",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "6",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "7",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "8",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "9",
+            "Suite": "Clubs"
+          },
+          {
+            "Rank": "10",
             "Suite": "Clubs"
           }
         ],
@@ -226,7 +228,7 @@
           "prefab": "prefabs/card.prefab"
         },
         "cardRank": "2",
-        "cardSuite": "",
+        "cardSuite": "Clubs",
         "excludeSuite": true,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -241,7 +243,7 @@
     ],
     "Children": [
       {
-        "__guid": "e5843b00-fe0a-4a9a-ae23-31e95f781a7d",
+        "__guid": "93d303d3-746c-4eec-bac5-dff439800891",
         "Flags": 0,
         "Name": "Card (1)",
         "Position": "10,10,0",
@@ -251,7 +253,7 @@
         "__PrefabVariables": {}
       },
       {
-        "__guid": "442c0988-7896-4974-b0d0-950597242fcf",
+        "__guid": "49eaa079-6fbe-4804-b794-4666dbd37066",
         "Flags": 0,
         "Name": "Card (2)",
         "Position": "0,0,1.371495",
@@ -261,7 +263,7 @@
         "__PrefabVariables": {}
       },
       {
-        "__guid": "a2db1761-3e58-47dd-ba69-59df56eee02e",
+        "__guid": "3cf6b197-15bc-49ff-939f-3bac34e87701",
         "Flags": 0,
         "Name": "Card (3)",
         "Position": "-10,-10,4.698364",
@@ -270,31 +272,7 @@
         "__Prefab": "prefabs/card.prefab",
         "__PrefabVariables": {}
       }
-    ],
-    "__variables": [],
-    "__properties": {
-      "FixedUpdateFrequency": 50,
-      "MaxFixedUpdates": 5,
-      "NetworkFrequency": 30,
-      "NetworkInterpolation": true,
-      "PhysicsSubSteps": 1,
-      "ThreadedAnimation": true,
-      "TimeScale": 1,
-      "UseFixedUpdate": true,
-      "Metadata": {},
-      "NavMesh": {
-        "Enabled": false,
-        "IncludeStaticBodies": true,
-        "IncludeKeyframedBodies": true,
-        "EditorAutoUpdate": true,
-        "AgentHeight": 64,
-        "AgentRadius": 16,
-        "AgentStepSize": 18,
-        "AgentMaxSlope": 40,
-        "ExcludedBodies": "",
-        "IncludedBodies": ""
-      }
-    }
+    ]
   },
   "ShowInMenu": false,
   "MenuPath": null,

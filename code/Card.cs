@@ -32,7 +32,7 @@ public sealed class Card : Component
 		get {  return _card; }
 	}
 
-	[Property, ReadOnly]
+	[Sync, Property, ReadOnly]
 	public string Rank
 	{
 		get
@@ -41,7 +41,7 @@ public sealed class Card : Component
 		}
 	}
 
-	[Property, ReadOnly]
+	[Sync, Property, ReadOnly]
 	public string Suite
 	{
 		get

@@ -21,6 +21,9 @@ public sealed class Deck : Component
 		}
 	}
 
+	[Sync]
+	private bool CardsLoaded { get; set; } = false;
+
 	// HACK: A different card prefab for each card? This is really a stopgap solution
 	[Property]
 	GameObject CardPrefab {  get; set; }
@@ -30,12 +33,15 @@ public sealed class Deck : Component
 	{
 		get
 		{
-			return _deck.Count;
+			return CardsLoaded ? Cards.Count : _startingDeck.Count;
 		}
 	}
 
-	[Property, Group( "Deck Content" )]
-	private readonly List<CardDesc> _deck = new List<CardDesc>();
+	[Property, Group( "Deck Content" ), HideIf( "CardsLoaded", true )]
+	private readonly List<CardDesc> _startingDeck = new List<CardDesc>();
+
+	[Sync]
+	private NetList<CardDesc> Cards { get; init; } = new NetList<CardDesc>();
 
 	private bool _sequenceAdd;
 
@@ -88,7 +94,10 @@ public sealed class Deck : Component
 	[Button, Group( "Modify Cards" )]
 	private void AddCard()
 	{
-		_deck.Add( new CardDesc( cardRank, cardSuite ) );
+		CardDesc c = new CardDesc( cardRank, cardSuite );
+
+		if (!CardsLoaded) _startingDeck.Add( c );
+		else Cards.Add( c );
 		if ( SequenceAdd )
 		{
 			_sequence++;
@@ -110,10 +119,22 @@ public sealed class Deck : Component
 	public void Shuffle()
 	{
 		Random random = new Random();
-		for (int i = _deck.Count-1; i>=1; i--)
+
+		if ( CardsLoaded )
 		{
-			int rIndex = random.Next( 0, i+1 );
-			(_deck[rIndex], _deck[i]) = (_deck[i],  _deck[rIndex]);
+			for ( int i = Cards.Count - 1; i >= 1; i-- )
+			{
+				int rIndex = random.Next( 0, i + 1 );
+				(Cards[rIndex], Cards[i]) = (Cards[i], Cards[rIndex]);
+			}
+		}
+		else
+		{
+			for ( int i = Cards.Count - 1; i >= 1; i-- )
+			{
+				int rIndex = random.Next( 0, i + 1 );
+				(Cards[rIndex], Cards[i]) = (Cards[i], Cards[rIndex]);
+			}
 		}
 	}
 
@@ -136,7 +157,7 @@ public sealed class Deck : Component
 	/// If the last card of the deck is drawn, the deck is removed
 	/// </summary>
 	/// <returns></returns>
-	public Card DrawTop() => Draw( _deck.Count-1 );
+	public Card DrawTop() => Draw( Cards.Count-1 );
 
 	/// <summary>
 	/// Draws a card from the index, if the last card of the deck is drawn, the deck is removed.
@@ -144,11 +165,22 @@ public sealed class Deck : Component
 	/// <returns></returns>
 	private Card Draw(int i)
 	{
-		Assert.True(_deck.Count > 0, "THE DECK HAS ATTEMPTED TO DRAW WITH NO CARDS");
+		Assert.True(Cards.Count > 0, "THE DECK HAS ATTEMPTED TO DRAW WITH NO CARDS");
 		
-		CardDesc logicalCard = _deck[i];
-		_deck.RemoveAt( i );
-		if ( _deck.Count == 0 )
+		CardDesc logicalCard = Cards[i];
+
+		if ( CardsLoaded )
+		{
+			Log.Info( "Removing From Shared Deck" );
+			Cards.RemoveAt( i );
+		}
+		else
+		{
+			Log.Info( "Removing From Local Deck" );
+			_startingDeck.RemoveAt( i );
+		}
+
+		if ( Cards.Count == 0 )
 		{
 			GameObject.Destroy();
 		}
@@ -171,7 +203,17 @@ public sealed class Deck : Component
 
 	protected override void OnStart()
 	{
+		if ( IsProxy ) return;
+
 		GameObject.BreakFromPrefab();
+
+		foreach ( CardDesc card in _startingDeck )
+		{
+			Cards.Add( card );
+		}
+
+		CardsLoaded = true;
+
 		Shuffle();
 	}
 }
