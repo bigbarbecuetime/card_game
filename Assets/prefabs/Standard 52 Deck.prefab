@@ -1,234 +1,287 @@
 {
   "RootObject": {
-    "__guid": "3e8ebda9-4812-4b8a-be73-cac54db89874",
+    "__guid": "65791a64-8596-4d23-9f5c-87049bbcc523",
     "Flags": 0,
     "Name": "standard 52 deck",
-    "Position": "2.969915,190.3206,0.6983638",
+    "Position": "0,0,38.08",
     "Rotation": "0,0,0.7071068,0.7071068",
+    "Scale": "2.24,1.6,0.65",
     "Enabled": true,
     "NetworkMode": 1,
-    "NetworkOrphaned": 2,
+    "NetworkOrphaned": 1,
     "OwnerTransfer": 0,
     "Components": [
       {
         "__type": "Deck",
-        "__guid": "983fbe9c-d418-4785-95e5-70ca698ca847",
+        "__guid": "ac7e2dd7-25f7-4f7b-a1ab-c381302b3740",
         "_startingDeck": [
           {
             "Rank": "Ace",
-            "Suite": "Clubs"
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "2",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "3",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "4",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "5",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "6",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "7",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "8",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "9",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "10",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Clubs",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "King",
+            "Suite": "Clubs",
+            "IsFlipped": false
           },
           {
             "Rank": "Ace",
-            "Suite": "Hearts"
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "2",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "3",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "4",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "5",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "6",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "7",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "8",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "9",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "10",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Diamonds",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "King",
+            "Suite": "Diamonds",
+            "IsFlipped": false
           },
           {
             "Rank": "Ace",
-            "Suite": "Spades"
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "2",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "3",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "4",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "5",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "6",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "7",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "8",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "9",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "10",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "Jack",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "Queen",
+            "Suite": "Hearts",
+            "IsFlipped": false
+          },
+          {
+            "Rank": "King",
+            "Suite": "Hearts",
+            "IsFlipped": false
           },
           {
             "Rank": "Ace",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "Jack",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "Jack",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "Jack",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "Jack",
-            "Suite": "Spades"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Spades"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "Queen",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "King",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "2",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "3",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "4",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "5",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "6",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "7",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "8",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "9",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
             "Rank": "10",
-            "Suite": "Spades"
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
-            "Rank": "2",
-            "Suite": "Hearts"
+            "Rank": "Jack",
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
-            "Rank": "3",
-            "Suite": "Hearts"
+            "Rank": "Queen",
+            "Suite": "Spades",
+            "IsFlipped": false
           },
           {
-            "Rank": "4",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "5",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "6",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "7",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "8",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "9",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "10",
-            "Suite": "Hearts"
-          },
-          {
-            "Rank": "2",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "3",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "4",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "5",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "6",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "7",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "8",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "9",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "10",
-            "Suite": "Diamonds"
-          },
-          {
-            "Rank": "2",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "3",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "4",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "5",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "6",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "7",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "8",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "9",
-            "Suite": "Clubs"
-          },
-          {
-            "Rank": "10",
-            "Suite": "Clubs"
+            "Rank": "King",
+            "Suite": "Spades",
+            "IsFlipped": false
           }
         ],
         "CardPrefab": {
           "_type": "gameobject",
           "prefab": "prefabs/card.prefab"
         },
-        "cardRank": "2",
-        "cardSuite": "Clubs",
+        "cardRank": "1",
+        "cardSuite": "",
         "excludeSuite": true,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -237,40 +290,187 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null,
         "SequenceAdd": false,
+        "ShuffleOnStart": true,
         "Size": 52,
-        "StartsFrom": 2
+        "StartsFrom": 1
+      },
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "f2d579bf-9622-47e1-a645-1f37366e4a11",
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "MaterialGroup": null,
+        "MaterialOverride": null,
+        "Model": "models/dev/box.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "0.57209,0.03991,0.03991,1"
+      },
+      {
+        "__type": "Sandbox.BoxCollider",
+        "__guid": "8efe419f-1736-46eb-aad6-63b6e83997cb",
+        "Center": "0,0,0",
+        "Friction": null,
+        "IsTrigger": false,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "OnObjectTriggerEnter": null,
+        "OnObjectTriggerExit": null,
+        "OnTriggerEnter": null,
+        "OnTriggerExit": null,
+        "Scale": "50,50,50",
+        "Static": false,
+        "Surface": null,
+        "SurfaceVelocity": "0,0,0"
       }
     ],
     "Children": [
       {
-        "__guid": "93d303d3-746c-4eec-bac5-dff439800891",
+        "__guid": "20c6e06e-0ce2-4284-a291-d8fa344e8883",
         "Flags": 0,
-        "Name": "Card (1)",
-        "Position": "10,10,0",
-        "Scale": "1.12,0.8,1",
+        "Name": "rank",
+        "Position": "-4.5,0,26.53846",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Scale": "0.5,0.5,1.538462",
         "Enabled": true,
-        "__Prefab": "prefabs/card.prefab",
-        "__PrefabVariables": {}
+        "NetworkMode": 1,
+        "OwnerTransfer": 0,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "075d7e7d-2ce0-4fc2-9cbe-ca7e15e5ec3f",
+            "__version": 1,
+            "BlendMode": "Normal",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Scale": 0.3,
+            "TextAlignment": "Center",
+            "TextScope": {
+              "Text": "RANK",
+              "TextColor": "0.45103,0.47149,0.5297,1",
+              "FontName": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "FontItalic": false,
+              "LineHeight": 1,
+              "LetterSpacing": 0,
+              "WordSpacing": 0,
+              "Outline": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,1,1"
+              },
+              "Shadow": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              },
+              "OutlineUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,1,0,1"
+              },
+              "ShadowUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              }
+            }
+          }
+        ]
       },
       {
-        "__guid": "49eaa079-6fbe-4804-b794-4666dbd37066",
+        "__guid": "a7c8b82b-20f6-4cce-adbf-477d4ad9d578",
         "Flags": 0,
-        "Name": "Card (2)",
-        "Position": "0,0,1.371495",
-        "Scale": "1.12,0.8,1",
+        "Name": "suite",
+        "Position": "15,0,26.53846",
+        "Rotation": "0,0.7071068,0,0.7071068",
+        "Scale": "0.5,0.5,1.538462",
         "Enabled": true,
-        "__Prefab": "prefabs/card.prefab",
-        "__PrefabVariables": {}
-      },
-      {
-        "__guid": "3cf6b197-15bc-49ff-939f-3bac34e87701",
-        "Flags": 0,
-        "Name": "Card (3)",
-        "Position": "-10,-10,4.698364",
-        "Scale": "1.12,0.8,1",
-        "Enabled": true,
-        "__Prefab": "prefabs/card.prefab",
-        "__PrefabVariables": {}
+        "NetworkMode": 1,
+        "OwnerTransfer": 0,
+        "Components": [
+          {
+            "__type": "Sandbox.TextRenderer",
+            "__guid": "0a8a7159-9066-436a-93e2-fe89b824c2b6",
+            "__version": 1,
+            "BlendMode": "Normal",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "Scale": 0.3,
+            "TextAlignment": "Center",
+            "TextScope": {
+              "Text": "SUITE",
+              "TextColor": "0.45103,0.47149,0.5297,1",
+              "FontName": "Poppins",
+              "FontSize": 64,
+              "FontWeight": 800,
+              "FontItalic": false,
+              "LineHeight": 1,
+              "LetterSpacing": 0,
+              "WordSpacing": 0,
+              "Outline": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,1,1"
+              },
+              "Shadow": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              },
+              "OutlineUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,1,0,1"
+              },
+              "ShadowUnder": {
+                "Enabled": false,
+                "Size": 4,
+                "Color": "0,0,0,1",
+                "Offset": "4,4"
+              }
+            }
+          }
+        ]
       }
     ]
   },

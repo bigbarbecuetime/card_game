@@ -1,7 +1,11 @@
 using Sandbox;
 
-public sealed class Card : Component
+public sealed class Card : Component, IFlippable
 {
+
+	private TextRenderer _rankTR;
+
+	private TextRenderer _suiteTR;
 
 	private Deck.CardDesc _card;
 
@@ -17,17 +21,21 @@ public sealed class Card : Component
 			{
 				if ( tr.GameObject.Name.Equals( "rank" ) )
 				{
+					_rankTR = tr;
 					tr.Text = _card.Rank;
 					tr.Network.Refresh();
 
 				}
 				if ( tr.GameObject.Name.Equals( "suite" ) )
 				{
+					_suiteTR = tr;
 					tr.Text = _card.Suite;
 					tr.Network.Refresh();
 				}
 				
 			}
+
+			IsFlipped = _card.IsFlipped;
 		}
 		get {  return _card; }
 	}
@@ -48,6 +56,27 @@ public sealed class Card : Component
 		{
 			return _card.Suite;
 		}
+	}
+
+	[Sync, Property, ReadOnly]
+	public bool IsFlipped
+	{
+		get
+		{
+			return _card.IsFlipped;
+		}
+		set
+		{
+			_card.IsFlipped = value;
+			_rankTR.Enabled = !value;
+			_suiteTR.Enabled = !value;
+		}
+	}
+
+	[Button]
+	public void Flip()
+	{
+		IsFlipped = !IsFlipped;
 	}
 
 	public override string ToString()

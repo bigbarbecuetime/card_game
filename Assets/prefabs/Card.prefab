@@ -30,7 +30,7 @@
           "AfterUILayer": false
         },
         "RenderType": "On",
-        "Tint": "0.57674,0.05097,0.05097,1"
+        "Tint": "0.57255,0.03922,0.03922,1"
       },
       {
         "__type": "Sandbox.PlaneCollider",
@@ -122,7 +122,7 @@
         "__guid": "ee83891e-d90f-49dd-b9de-b7b56dbf6cc1",
         "Flags": 0,
         "Name": "rank",
-        "Position": "-8.656254,0,1",
+        "Position": "-9,0,1",
         "Rotation": "0,0.7071068,0,0.7071068",
         "Enabled": true,
         "Components": [

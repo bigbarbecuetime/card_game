@@ -2,22 +2,82 @@ using Sandbox;
 using Sandbox.Diagnostics;
 using System;
 
-public sealed class Deck : Component
+public sealed class Deck : Component, IFlippable
 {
-	public readonly struct CardDesc
+	private TextRenderer RankTR { get; set; }
+
+	private TextRenderer SuiteTR { get; set; }
+
+	public struct CardDesc
 	{
 		public string Rank { get; init; }
 		public string Suite { get; init; }
+		public bool IsFlipped { get; set; }
 
-		public CardDesc( string rank, string suite)
+		public CardDesc( string rank, string suite, bool isFlipped)
 		{
 			Rank = rank;
 			Suite = suite;
+			IsFlipped = isFlipped;
+		}
+
+		public CardDesc( string rank, string suite )
+		{
+			Rank = rank;
+			Suite = suite;
+			IsFlipped = false;
 		}
 
 		public override string ToString()
 		{
 			return $"Card {Rank} of {Suite}";
+		}
+	}
+
+	bool _isFlipped = false;
+
+	[Sync]
+	public bool IsFlipped 
+	{ 
+		get
+		{
+			return _isFlipped;
+		}
+		set
+		{
+			if ( value != _isFlipped )
+			{
+				if ( CardsLoaded )
+				{
+					NetList<CardDesc> tmpCards = new NetList<CardDesc>();
+
+					foreach ( CardDesc c in Cards.AsEnumerable().Reverse() )
+					{
+						tmpCards.Add( new CardDesc( c.Rank, c.Suite, !c.IsFlipped ) );
+					}
+
+					Cards = tmpCards;
+				}
+				else
+				{
+					_startingDeck.Reverse();
+
+
+					List<CardDesc> tmpStartDeck = new List<CardDesc>();
+
+					foreach ( CardDesc c in _startingDeck )
+					{
+						tmpStartDeck.Add( new CardDesc( c.Rank, c.Suite, !c.IsFlipped ) );
+					}
+
+					_startingDeck = tmpStartDeck;
+				}
+				
+			}
+
+			_isFlipped = value;
+
+			UpdateText();
 		}
 	}
 
@@ -38,10 +98,10 @@ public sealed class Deck : Component
 	}
 
 	[Property, Group( "Deck Content" ), HideIf( "CardsLoaded", true )]
-	private readonly List<CardDesc> _startingDeck = new List<CardDesc>();
+	private List<CardDesc> _startingDeck = new List<CardDesc>();
 
 	[Sync]
-	private NetList<CardDesc> Cards { get; init; } = new NetList<CardDesc>();
+	private NetList<CardDesc> Cards { get; set; } = new NetList<CardDesc>();
 
 	private bool _sequenceAdd;
 
@@ -104,6 +164,8 @@ public sealed class Deck : Component
 			cardRank = $"{_sequence}";
 			if ( !excludeSuite ) cardSuite = $"{_sequence}";
 		}
+
+		UpdateText();
 	}
 
 	[Button, Group( "Modify Cards" )]
@@ -136,7 +198,12 @@ public sealed class Deck : Component
 				(Cards[rIndex], Cards[i]) = (Cards[i], Cards[rIndex]);
 			}
 		}
+
+		UpdateText();
 	}
+
+	[Property, Group( "Modify Cards" ), HideIf( "CardsLoaded", true )]
+	private bool ShuffleOnStart { get; set; }
 
 	private void SetSequence()
 	{
@@ -171,12 +238,10 @@ public sealed class Deck : Component
 
 		if ( CardsLoaded )
 		{
-			Log.Info( "Removing From Shared Deck" );
 			Cards.RemoveAt( i );
 		}
 		else
 		{
-			Log.Info( "Removing From Local Deck" );
 			_startingDeck.RemoveAt( i );
 		}
 
@@ -198,11 +263,50 @@ public sealed class Deck : Component
 		worldCard.CardValue = logicalCard;
 
 		worldCard.GameObject.NetworkSpawn();
+
+		UpdateText();
+
 		return worldCard;
+	}
+
+	[Button, Group( "Modify Cards" )]
+	public void Flip() => IsFlipped = !IsFlipped;
+
+	private CardDesc PeekTop() => Peek( Size - 1 );
+
+	private CardDesc Peek(int i)
+	{
+		return CardsLoaded ? Cards[i] : _startingDeck[i];
+	}
+
+	private void UpdateText()
+	{
+		if ( Size == 0) return;
+
+		RankTR.Text = PeekTop().Rank;
+		RankTR.Enabled = !IsFlipped;
+		RankTR.Network.Refresh();
+
+		SuiteTR.Text = PeekTop().Suite;
+		SuiteTR.Enabled = !IsFlipped;
+		SuiteTR.Network.Refresh();
 	}
 
 	protected override void OnStart()
 	{
+		// HACK: Not the best design for this, requires the card to have a text child 
+		foreach ( TextRenderer tr in GameObject.GetComponentsInChildren<TextRenderer>() )
+		{
+			if ( tr.GameObject.Name.Equals( "rank" ) )
+			{
+				RankTR = tr;
+			}
+			if ( tr.GameObject.Name.Equals( "suite" ) )
+			{
+				SuiteTR = tr;
+			}
+
+		}
 		if ( IsProxy ) return;
 
 		GameObject.BreakFromPrefab();
@@ -214,6 +318,7 @@ public sealed class Deck : Component
 
 		CardsLoaded = true;
 
-		Shuffle();
+		if (ShuffleOnStart) Shuffle();
+		UpdateText();
 	}
 }

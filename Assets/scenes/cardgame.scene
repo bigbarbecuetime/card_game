@@ -123,235 +123,59 @@
       ]
     },
     {
-      "__guid": "3e8ebda9-4812-4b8a-be73-cac54db89874",
+      "__guid": "65791a64-8596-4d23-9f5c-87049bbcc523",
       "Flags": 0,
       "Name": "standard 52 deck",
-      "Position": "2.969915,190.3206,0.6983638",
+      "Position": "0,0,38.08",
       "Rotation": "0,0,0.7071068,0.7071068",
+      "Scale": "2.24,1.6,0.65",
+      "__Prefab": "prefabs/standard 52 deck.prefab",
+      "__PrefabVariables": {}
+    },
+    {
+      "__guid": "deca5453-26f9-429e-9bc7-fcb52552bfb0",
+      "Flags": 0,
+      "Name": "mini deck",
+      "Position": "0,0,38.08",
+      "Rotation": "0,0,0.7071068,0.7071068",
+      "Scale": "2.24,1.6,0.65",
+      "Enabled": true,
       "NetworkMode": 1,
-      "NetworkOrphaned": 2,
+      "NetworkOrphaned": 1,
       "OwnerTransfer": 0,
       "Components": [
         {
           "__type": "Deck",
-          "__guid": "983fbe9c-d418-4785-95e5-70ca698ca847",
+          "__guid": "76617017-075c-4f5d-802b-57f6de96d8bd",
           "_startingDeck": [
             {
-              "Rank": "Ace",
-              "Suite": "Clubs"
+              "Rank": "0",
+              "Suite": "0",
+              "IsFlipped": false
             },
             {
-              "Rank": "Ace",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "Ace",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "Ace",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "Jack",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "Jack",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "Jack",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "Jack",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "Queen",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "Queen",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "Queen",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "Queen",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "King",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "King",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "King",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "King",
-              "Suite": "Spades"
+              "Rank": "1",
+              "Suite": "1",
+              "IsFlipped": false
             },
             {
               "Rank": "2",
-              "Suite": "Spades"
+              "Suite": "2",
+              "IsFlipped": false
             },
             {
               "Rank": "3",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "4",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "5",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "6",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "7",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "8",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "9",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "10",
-              "Suite": "Spades"
-            },
-            {
-              "Rank": "2",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "3",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "4",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "5",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "6",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "7",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "8",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "9",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "10",
-              "Suite": "Hearts"
-            },
-            {
-              "Rank": "2",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "3",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "4",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "5",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "6",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "7",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "8",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "9",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "10",
-              "Suite": "Diamonds"
-            },
-            {
-              "Rank": "2",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "3",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "4",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "5",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "6",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "7",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "8",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "9",
-              "Suite": "Clubs"
-            },
-            {
-              "Rank": "10",
-              "Suite": "Clubs"
+              "Suite": "3",
+              "IsFlipped": false
             }
           ],
           "CardPrefab": {
             "_type": "gameobject",
             "prefab": "prefabs/card.prefab"
           },
-          "cardRank": "2",
-          "cardSuite": "Clubs",
-          "excludeSuite": true,
+          "cardRank": "4",
+          "cardSuite": "4",
+          "excludeSuite": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
           "OnComponentEnabled": null,
@@ -359,97 +183,13 @@
           "OnComponentStart": null,
           "OnComponentUpdate": null,
           "SequenceAdd": false,
-          "Size": 52,
-          "StartsFrom": 2
-        }
-      ],
-      "Children": [
-        {
-          "__guid": "93d303d3-746c-4eec-bac5-dff439800891",
-          "Flags": 0,
-          "Name": "Card (1)",
-          "Position": "10,10,0",
-          "Scale": "1.12,0.8,1",
-          "Enabled": true,
-          "__Prefab": "prefabs/card.prefab",
-          "__PrefabVariables": {}
-        },
-        {
-          "__guid": "49eaa079-6fbe-4804-b794-4666dbd37066",
-          "Flags": 0,
-          "Name": "Card (2)",
-          "Position": "0,0,1.371495",
-          "Scale": "1.12,0.8,1",
-          "Enabled": true,
-          "__Prefab": "prefabs/card.prefab",
-          "__PrefabVariables": {}
-        },
-        {
-          "__guid": "3cf6b197-15bc-49ff-939f-3bac34e87701",
-          "Flags": 0,
-          "Name": "Card (3)",
-          "Position": "-10,-10,4.698364",
-          "Scale": "1.12,0.8,1",
-          "Enabled": true,
-          "__Prefab": "prefabs/card.prefab",
-          "__PrefabVariables": {}
-        }
-      ]
-    },
-    {
-      "__guid": "b7120e9b-8bc1-4a40-8727-fbb466b9cf45",
-      "Flags": 0,
-      "Name": "tiny",
-      "Rotation": "0,0,0.7071068,0.7071068",
-      "NetworkMode": 1,
-      "NetworkOrphaned": 1,
-      "OwnerTransfer": 0,
-      "Components": [
-        {
-          "__type": "Deck",
-          "__guid": "ad67db6a-3621-4c39-a527-4e64ee137a2e",
-          "_startingDeck": [
-            {
-              "Rank": "0",
-              "Suite": "0"
-            },
-            {
-              "Rank": "1",
-              "Suite": "1"
-            },
-            {
-              "Rank": "2",
-              "Suite": "2"
-            },
-            {
-              "Rank": "3",
-              "Suite": "3"
-            },
-            {
-              "Rank": "4",
-              "Suite": "4"
-            }
-          ],
-          "CardPrefab": {
-            "_type": "gameobject",
-            "prefab": "prefabs/card.prefab"
-          },
-          "cardRank": "0",
-          "cardSuite": "0",
-          "excludeSuite": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "SequenceAdd": true,
-          "Size": 5,
+          "ShuffleOnStart": false,
+          "Size": 4,
           "StartsFrom": 0
         },
         {
           "__type": "Sandbox.ModelRenderer",
-          "__guid": "5f3437e8-62f9-40cd-8922-3731a183f308",
+          "__guid": "b9dfaebd-f02e-4f32-a0d1-443a06efb2ef",
           "BodyGroups": 18446744073709551615,
           "CreateAttachments": false,
           "MaterialGroup": null,
@@ -468,97 +208,162 @@
             "AfterUILayer": false
           },
           "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "Tint": "0.57209,0.03991,0.03991,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "e65d7f83-b71d-4c74-81f9-f6ca267d8739",
+          "Center": "0,0,0",
+          "Friction": null,
+          "IsTrigger": false,
+          "OnComponentDestroy": null,
+          "OnComponentDisabled": null,
+          "OnComponentEnabled": null,
+          "OnComponentFixedUpdate": null,
+          "OnComponentStart": null,
+          "OnComponentUpdate": null,
+          "OnObjectTriggerEnter": null,
+          "OnObjectTriggerExit": null,
+          "OnTriggerEnter": null,
+          "OnTriggerExit": null,
+          "Scale": "50,50,50",
+          "Static": false,
+          "Surface": null,
+          "SurfaceVelocity": "0,0,0"
         }
       ],
       "Children": [
         {
-          "__guid": "a081cba7-162c-4b01-a1ff-9774ffcd26f6",
+          "__guid": "3b0c7e8b-2e81-45f5-a3f8-68a1f6e7e467",
           "Flags": 0,
-          "Name": "Card (2)",
-          "Position": "0,0,1.371495",
-          "Scale": "1.12,0.8,1",
+          "Name": "rank",
+          "Position": "-4.5,0,26.53846",
+          "Rotation": "0,0.7071068,0,0.7071068",
+          "Scale": "0.5,0.5,1.538462",
           "Enabled": true,
-          "__Prefab": "prefabs/card.prefab",
-          "__PrefabVariables": {}
-        }
-      ]
-    },
-    {
-      "__guid": "90533619-9785-48f4-9881-2eab9768e5d8",
-      "Flags": 0,
-      "Name": "tiny (1)",
-      "Position": "0,0,16",
-      "Rotation": "0,0,0.7071068,0.7071068",
-      "Scale": "2.24,1.6,0.65",
-      "NetworkMode": 1,
-      "NetworkOrphaned": 1,
-      "OwnerTransfer": 0,
-      "Components": [
-        {
-          "__type": "Deck",
-          "__guid": "5950dfd0-1377-4426-be2a-3f663e66105d",
-          "_startingDeck": [
+          "NetworkMode": 1,
+          "OwnerTransfer": 0,
+          "Components": [
             {
-              "Rank": "0",
-              "Suite": "0"
-            },
-            {
-              "Rank": "1",
-              "Suite": "1"
-            },
-            {
-              "Rank": "2",
-              "Suite": "2"
-            },
-            {
-              "Rank": "3",
-              "Suite": "3"
-            },
-            {
-              "Rank": "4",
-              "Suite": "4"
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "c1158cb7-8ee2-4b97-a207-f54fe53f7d96",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "RANK",
+                "TextColor": "0.45103,0.47149,0.5297,1",
+                "FontName": "Poppins",
+                "FontSize": 64,
+                "FontWeight": 800,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,0,1,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,0,0,1",
+                  "Offset": "4,4"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,0,0,1",
+                  "Offset": "4,4"
+                }
+              }
             }
-          ],
-          "CardPrefab": {
-            "_type": "gameobject",
-            "prefab": "prefabs/card.prefab"
-          },
-          "cardRank": "0",
-          "cardSuite": "0",
-          "excludeSuite": false,
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "SequenceAdd": true,
-          "Size": 5,
-          "StartsFrom": 0
+          ]
         },
         {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "6d45d90f-7bb2-4fdc-b548-0223e8127517",
-          "BodyGroups": 18446744073709551615,
-          "CreateAttachments": false,
-          "MaterialGroup": null,
-          "MaterialOverride": null,
-          "Model": "models/dev/box.vmdl",
-          "OnComponentDestroy": null,
-          "OnComponentDisabled": null,
-          "OnComponentEnabled": null,
-          "OnComponentFixedUpdate": null,
-          "OnComponentStart": null,
-          "OnComponentUpdate": null,
-          "RenderOptions": {
-            "GameLayer": true,
-            "OverlayLayer": false,
-            "BloomLayer": false,
-            "AfterUILayer": false
-          },
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
+          "__guid": "5958507e-0437-4411-a9ba-419ecb2c441e",
+          "Flags": 0,
+          "Name": "suite",
+          "Position": "15,0,26.53846",
+          "Rotation": "0,0.7071068,0,0.7071068",
+          "Scale": "0.5,0.5,1.538462",
+          "Enabled": true,
+          "NetworkMode": 1,
+          "OwnerTransfer": 0,
+          "Components": [
+            {
+              "__type": "Sandbox.TextRenderer",
+              "__guid": "a0179d59-582a-4c0d-91b8-86262f9b0531",
+              "__version": 1,
+              "BlendMode": "Normal",
+              "OnComponentDestroy": null,
+              "OnComponentDisabled": null,
+              "OnComponentEnabled": null,
+              "OnComponentFixedUpdate": null,
+              "OnComponentStart": null,
+              "OnComponentUpdate": null,
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
+              "Scale": 0.3,
+              "TextAlignment": "Center",
+              "TextScope": {
+                "Text": "SUITE",
+                "TextColor": "0.45103,0.47149,0.5297,1",
+                "FontName": "Poppins",
+                "FontSize": 64,
+                "FontWeight": 800,
+                "FontItalic": false,
+                "LineHeight": 1,
+                "LetterSpacing": 0,
+                "WordSpacing": 0,
+                "Outline": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,0,1,1"
+                },
+                "Shadow": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,0,0,1",
+                  "Offset": "4,4"
+                },
+                "OutlineUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,1,0,1"
+                },
+                "ShadowUnder": {
+                  "Enabled": false,
+                  "Size": 4,
+                  "Color": "0,0,0,1",
+                  "Offset": "4,4"
+                }
+              }
+            }
+          ]
         }
       ]
     }

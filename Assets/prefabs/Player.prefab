@@ -2,12 +2,14 @@
   "RootObject": {
     "__guid": "54139a49-3419-40ea-ab07-8b5609f7e7d7",
     "Flags": 0,
-    "Name": "Player",
+    "Name": "player",
     "Enabled": true,
     "Components": [
       {
         "__type": "CardPlayerController",
         "__guid": "a373fce8-bbd6-4ff5-8f00-6f1e56cb6ea5",
+        "flip": "flip",
+        "grab": "attack1",
         "held": null,
         "OnComponentDestroy": null,
         "OnComponentDisabled": null,
@@ -16,7 +18,32 @@
         "OnComponentStart": null,
         "OnComponentUpdate": null
       }
-    ]
+    ],
+    "Children": [],
+    "__variables": [],
+    "__properties": {
+      "FixedUpdateFrequency": 50,
+      "MaxFixedUpdates": 5,
+      "NetworkFrequency": 30,
+      "NetworkInterpolation": true,
+      "PhysicsSubSteps": 1,
+      "ThreadedAnimation": true,
+      "TimeScale": 1,
+      "UseFixedUpdate": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": true,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": ""
+      }
+    }
   },
   "ShowInMenu": false,
   "MenuPath": null,
