@@ -281,6 +281,7 @@ public sealed class Deck : Component, IFlippable
 
 	private void UpdateText()
 	{
+		Log.Info( "Attempting to update text" );
 		if ( Size == 0) return;
 
 		RankTR.Text = PeekTop().Rank;

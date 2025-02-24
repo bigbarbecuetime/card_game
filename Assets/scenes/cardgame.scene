@@ -129,6 +129,7 @@
       "Position": "0,0,38.08",
       "Rotation": "0,0,0.7071068,0.7071068",
       "Scale": "2.24,1.6,0.65",
+      "Enabled": true,
       "__Prefab": "prefabs/standard 52 deck.prefab",
       "__PrefabVariables": {}
     },
@@ -139,7 +140,6 @@
       "Position": "0,0,38.08",
       "Rotation": "0,0,0.7071068,0.7071068",
       "Scale": "2.24,1.6,0.65",
-      "Enabled": true,
       "NetworkMode": 1,
       "NetworkOrphaned": 1,
       "OwnerTransfer": 0,
@@ -173,8 +173,8 @@
             "_type": "gameobject",
             "prefab": "prefabs/card.prefab"
           },
-          "cardRank": "4",
-          "cardSuite": "4",
+          "cardRank": "0",
+          "cardSuite": "0",
           "excludeSuite": false,
           "OnComponentDestroy": null,
           "OnComponentDisabled": null,
